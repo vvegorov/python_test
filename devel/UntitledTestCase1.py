@@ -7,6 +7,8 @@ from selenium.common.exceptions import NoSuchElementException
 from selenium.common.exceptions import NoAlertPresentException
 import unittest, time, re
 
+
+
 class UntitledTestCase(unittest.TestCase):
     def setUp(self):
         self.driver = webdriver.Chrome('C:\\Files\\chromedriver.exe')
