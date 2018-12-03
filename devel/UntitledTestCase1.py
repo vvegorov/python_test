@@ -6,6 +6,7 @@ from selenium.webdriver.support.ui import Select
 from selenium.common.exceptions import NoSuchElementException
 from selenium.common.exceptions import NoAlertPresentException
 import unittest, time, re
+from group import Group
 
 
 
@@ -19,26 +20,51 @@ class UntitledTestCase(unittest.TestCase):
     
     def test_untitled_test_case(self):
         driver = self.driver
-        driver.get("http://localhost/litecart/public_html/admin/login.php")
-        driver.find_element_by_name("username").clear()
-        driver.find_element_by_name("username").send_keys("admin")
-        driver.find_element_by_name("password").click()
-        driver.find_element_by_name("password").clear()
-        driver.find_element_by_name("password").send_keys("admin")
-        driver.find_element_by_xpath("(.//*[normalize-space(text()) and normalize-space(.)='Remember Me'])[1]/following::button[1]").click()
-        driver.find_element_by_xpath("(.//*[normalize-space(text()) and normalize-space(.)='Appearance'])[1]/following::span[2]").click()
+        self.open_home_page(driver)
+
+        self.method_login(driver, username="admin", password="admin")
+
+        self.method_new_product(driver, Group(product_name="Product_41", product_code="Code_41"))
+
+    def test_untitled_test_case31(self):
+        driver = self.driver
+        self.open_home_page(driver)
+
+        self.method_login(driver, username="admin", password="admin")
+
+        self.method_new_product(driver, Group(product_name="Product_31", product_code="Code_31"))
+
+    def method_new_product(self, driver, group):
+        # Add New Product
+        driver.find_element_by_xpath(
+            "(.//*[normalize-space(text()) and normalize-space(.)='Appearance'])[1]/following::span[2]").click()
         driver.find_element_by_link_text("Add New Product").click()
         driver.find_element_by_name("name[en]").click()
         driver.find_element_by_name("name[en]").clear()
-        driver.find_element_by_name("name[en]").send_keys("rty123")
+        driver.find_element_by_name("name[en]").send_keys(group.product_name)
         driver.find_element_by_name("code").click()
         driver.find_element_by_name("code").clear()
-        driver.find_element_by_name("code").send_keys("tyu456")
+        driver.find_element_by_name("code").send_keys(group.product_code)
         driver.find_element_by_xpath("(//input[@name='categories[]'])[2]").click()
         driver.find_element_by_name("categories[]").click()
-        driver.find_element_by_xpath("(.//*[normalize-space(text()) and normalize-space(.)='Status'])[1]/following::label[1]").click()
+        driver.find_element_by_xpath(
+            "(.//*[normalize-space(text()) and normalize-space(.)='Status'])[1]/following::label[1]").click()
         driver.find_element_by_name("save").click()
-    
+
+    def method_login(self, driver, username, password):
+        # login
+        driver.find_element_by_name("username").clear()
+        driver.find_element_by_name("username").send_keys(username)
+        driver.find_element_by_name("password").click()
+        driver.find_element_by_name("password").clear()
+        driver.find_element_by_name("password").send_keys(password)
+        driver.find_element_by_xpath(
+            "(.//*[normalize-space(text()) and normalize-space(.)='Remember Me'])[1]/following::button[1]").click()
+
+    def open_home_page(self, driver):
+        # open home page
+        driver.get("http://localhost/litecart/public_html/admin/login.php")
+
     def is_element_present(self, how, what):
         try: self.driver.find_element(by=how, value=what)
         except NoSuchElementException as e: return False
