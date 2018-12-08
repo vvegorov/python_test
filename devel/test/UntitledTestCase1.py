@@ -30,13 +30,13 @@ class UntitledTestCase(unittest.TestCase):
     def test_untitled_test_case(self):
         print('test_untitled_test_case_START')
         self.app.session.method_login(username="admin", password="admin")
-        self.app.method_new_product(Group(product_name="Product_110", product_code="Code_110"))
+        self.app.product.create(Group(product_name="Product_110", product_code="Code_110"))
         self.test = 'test_untitled_test_case'
 
     def test_untitled_test_case31(self):
         print('test_untitled_test_case31_START')
         self.app.session.method_login(username="admin", password="admin")
-        self.app.method_new_product(Group(product_name="Product_104", product_code="Code_104"))
+        self.app.product.create(Group(product_name="Product_104", product_code="Code_104"))
         self.test = 'test_untitled_test_case31'
 
     def tearDown(self):
