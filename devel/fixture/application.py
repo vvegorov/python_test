@@ -4,19 +4,22 @@ from selenium.webdriver.support.ui import Select
 from selenium.common.exceptions import NoSuchElementException
 from selenium.common.exceptions import NoAlertPresentException
 from selenium import webdriver
+from fixture.session import SessionHelper
 # import unittest, time, re
 
 class Application:
     def __init__(self):
-        print('\ntest221')
+        print('\nApplication_init_webdriver')
         self.driver = webdriver.Chrome('C:\\Files\\chromedriver.exe')
         self.driver.implicitly_wait(60)
+        self.session = SessionHelper(self)
         # self.base_url = "https://www.katalon.com/"
         # self.verificationErrors = []
         # self.accept_next_alert = True
 
     def method_new_product(self, group):
         driver = self.driver
+        print('method_new_product')
         # Add New Product
         driver.find_element_by_xpath(
             "(.//*[normalize-space(text()) and normalize-space(.)='Appearance'])[1]/following::span[2]").click()
@@ -33,18 +36,6 @@ class Application:
             "(.//*[normalize-space(text()) and normalize-space(.)='Status'])[1]/following::label[1]").click()
         driver.find_element_by_name("save").click()
 
-    def method_login(self, username, password):
-        driver = self.driver
-        self.open_home_page()
-        print('method_login')
-        # login
-        driver.find_element_by_name("username").clear()
-        driver.find_element_by_name("username").send_keys(username)
-        driver.find_element_by_name("password").click()
-        driver.find_element_by_name("password").clear()
-        driver.find_element_by_name("password").send_keys(password)
-        driver.find_element_by_xpath(
-            "(.//*[normalize-space(text()) and normalize-space(.)='Remember Me'])[1]/following::button[1]").click()
 
     def open_home_page(self):
         driver = self.driver

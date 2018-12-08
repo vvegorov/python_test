@@ -10,8 +10,8 @@ import unittest
 from model.group import Group
 
 from fixture.application import Application
-print('2131231231')
-print(Application())
+print('START!!!')
+# print(Application())
 # @pytest.fixture
 # def app(request):
 #     print('fixture')
@@ -25,17 +25,22 @@ print(Application())
 class UntitledTestCase(unittest.TestCase):
     def setUp(self):
         self.app = Application()
+        self.test = ''
 
     def test_untitled_test_case(self):
-        print('test_untitled_test_case')
-        self.app.method_login(username="admin", password="admin")
-        self.app.method_new_product(Group(product_name="Product_88", product_code="Code_98"))
+        print('test_untitled_test_case_START')
+        self.app.session.method_login(username="admin", password="admin")
+        self.app.method_new_product(Group(product_name="Product_110", product_code="Code_110"))
+        self.test = 'test_untitled_test_case'
 
     def test_untitled_test_case31(self):
-        self.app.method_login(username="admin", password="admin")
-        self.app.method_new_product(Group(product_name="Product_89", product_code="Code_99"))
+        print('test_untitled_test_case31_START')
+        self.app.session.method_login(username="admin", password="admin")
+        self.app.method_new_product(Group(product_name="Product_104", product_code="Code_104"))
+        self.test = 'test_untitled_test_case31'
 
     def tearDown(self):
+        print(self.test + '_END')
         self.app.destroy()
 
 
