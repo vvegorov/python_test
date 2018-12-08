@@ -27,12 +27,12 @@ class UntitledTestCase(unittest.TestCase):
         self.app = Application()
         self.test = ''
 
-    def test_untitled_test_case(self):
-        print('test_untitled_test_case_START')
+    def test_untitled_test_case_delete(self):
+        print('test_untitled_test_case_delete_START')
         self.app.session.method_login(username="admin", password="admin")
-        self.app.product.create(Group(product_name="Product_110", product_code="Code_110"))
-        # self.app.product.delete()
-        self.test = 'test_untitled_test_case'
+        # self.app.product.create(Group(product_name="Product_110", product_code="Code_110"))
+        self.app.product.delete()
+        self.test = 'test_untitled_test_case_delete'
 
     # def test_untitled_test_case31(self):
     #     print('test_untitled_test_case31_START')
