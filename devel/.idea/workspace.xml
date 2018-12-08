@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be872a5c-f307-45d5-8e78-b4163e09d068" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/devel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/devel.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UntitledTestCase1.py" beforeDir="false" afterPath="$PROJECT_DIR$/UntitledTestCase1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UntitledTestCase1.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/UntitledTestCase1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/application.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/group.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/group.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,20 +15,20 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/UntitledTestCase1.py">
+        <entry file="file://$PROJECT_DIR$/test/UntitledTestCase1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
+            <state relative-caret-position="1278">
               <caret line="35" column="90" selection-start-line="35" selection-start-column="90" selection-end-line="35" selection-end-column="90" />
               <folding>
                 <element signature="e#349#374#0" expanded="true" />
-                <marker date="1544207728395" expanded="true" signature="479:634" ph="..." />
+                <marker date="1544258537695" expanded="true" signature="483:638" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/group.py">
+        <entry file="file://$PROJECT_DIR$/model/group.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="111">
               <caret line="3" column="40" selection-start-line="3" selection-start-column="40" selection-end-line="3" selection-end-column="40" />
@@ -40,7 +39,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/UntitledTestCase.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
+            <state relative-caret-position="333">
               <caret line="15" column="37" selection-start-line="9" selection-end-line="15" selection-end-column="37" />
               <folding>
                 <element signature="e#24#54#0" expanded="true" />
@@ -50,10 +49,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application.py">
+        <entry file="file://$PROJECT_DIR$/fixture/application.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="17" column="40" lean-forward="true" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
+            <state relative-caret-position="444">
+              <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
               <folding>
                 <element signature="e#0#43#0" expanded="true" />
               </folding>
@@ -110,6 +109,21 @@
             <path>
               <item name="devel" type="b2602c69:ProjectViewProjectNode" />
               <item name="devel" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="devel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="devel" type="462c0819:PsiDirectoryNode" />
+              <item name="fixture" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="devel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="devel" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="devel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="devel" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="devel" type="b2602c69:ProjectViewProjectNode" />
@@ -176,7 +190,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/UntitledTestCase1.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\Lubov\Documents\GitHub\python_test\devel\test\UntitledTestCase1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -196,7 +210,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_pattern" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/UntitledTestCase1.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/UntitledTestCase1.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
@@ -219,9 +233,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_UntitledTestCase1_py - 2018.12.04 at 20h 51m 18s.xml">
-      <configuration name="Unittests in UntitledTestCase1.py" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_in_UntitledTestCase1_py - 2018.12.05 at 23h 12m 31s.xml">
       <configuration name="Unittests in UntitledTestCase1.py" configurationId="tests" />
     </history-entry>
@@ -249,16 +260,19 @@
     <history-entry file="Unittests_in_UntitledTestCase1_py - 2018.12.07 at 21h 36m 24s.xml">
       <configuration name="Unittests in UntitledTestCase1.py" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittests_in_UntitledTestCase1_py - 2018.12.08 at 11h 33m 17s.xml">
+      <configuration name="Unittests in UntitledTestCase1.py" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1311787" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1311787" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.1615074" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.1615074" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -276,7 +290,18 @@
     <entry file="file://$PROJECT_DIR$/geckodriver.log">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/group.py">
+    <entry file="file://$PROJECT_DIR$/test/UntitledTestCase1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1278">
+          <caret line="35" column="90" selection-start-line="35" selection-start-column="90" selection-end-line="35" selection-end-column="90" />
+          <folding>
+            <element signature="e#349#374#0" expanded="true" />
+            <marker date="1544258537695" expanded="true" signature="483:638" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/group.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="111">
           <caret line="3" column="40" selection-start-line="3" selection-start-column="40" selection-end-line="3" selection-end-column="40" />
@@ -285,7 +310,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/UntitledTestCase.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
+        <state relative-caret-position="333">
           <caret line="15" column="37" selection-start-line="9" selection-end-line="15" selection-end-column="37" />
           <folding>
             <element signature="e#24#54#0" expanded="true" />
@@ -293,23 +318,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application.py">
+    <entry file="file://$PROJECT_DIR$/fixture/application.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="17" column="40" lean-forward="true" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
+        <state relative-caret-position="444">
+          <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
           <folding>
             <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UntitledTestCase1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="35" column="90" selection-start-line="35" selection-start-column="90" selection-end-line="35" selection-end-column="90" />
-          <folding>
-            <element signature="e#349#374#0" expanded="true" />
-            <marker date="1544207728395" expanded="true" signature="479:634" ph="..." />
           </folding>
         </state>
       </provider>

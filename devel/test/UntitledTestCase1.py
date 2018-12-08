@@ -6,10 +6,10 @@
 # from selenium.common.exceptions import NoSuchElementException
 # from selenium.common.exceptions import NoAlertPresentException
 # import pytest
-import unittest, time, re
-from group import Group
+import unittest
+from model.group import Group
 
-from application import Application
+from fixture.application import Application
 print('2131231231')
 print(Application())
 # @pytest.fixture
