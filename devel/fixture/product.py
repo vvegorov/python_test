@@ -33,7 +33,7 @@ class ProductHelper:
         driver.find_element_by_xpath(
             "(.//*[normalize-space(text()) and normalize-space(.)='Appearance'])[1]/following::span[2]").click()
         driver.find_element_by_link_text("NewCategory234").click()
-        driver.find_element_by_name("products[73]").click()
+        driver.find_element_by_name("products[79]").click()
         driver.find_element_by_name("delete").click()
         driver.switch_to_alert().accept()
         # WebDriverWait(driver, 5).until(EC.alert_is_present).accept()
